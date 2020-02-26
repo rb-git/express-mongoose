@@ -19,15 +19,13 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"description\" : \"williamtask2\",\n\t\"completed\" : \"true\"\n}"
+					"raw": "{\n\t\"description\" : \"task7\",\n\t\"completed\" : \"false\"\n}"
 				},
 				"url": {
-					"raw": "http://localhost:3000/tasks",
-					"protocol": "http",
+					"raw": "{{url}}/tasks",
 					"host": [
-						"localhost"
+						"{{url}}"
 					],
-					"port": "3000",
 					"path": [
 						"tasks"
 					]
@@ -41,14 +39,18 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/tasks",
-					"protocol": "http",
+					"raw": "{{url}}/tasks?sortBy=createdAt:asc",
 					"host": [
-						"localhost"
+						"{{url}}"
 					],
-					"port": "3000",
 					"path": [
 						"tasks"
+					],
+					"query": [
+						{
+							"key": "sortBy",
+							"value": "createdAt:asc"
+						}
 					]
 				}
 			},
@@ -60,12 +62,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/tasks/5e3948aa72c1a13178a1be93",
-					"protocol": "http",
+					"raw": "{{url}}/tasks/5e3948aa72c1a13178a1be93",
 					"host": [
-						"localhost"
+						"{{url}}"
 					],
-					"port": "3000",
 					"path": [
 						"tasks",
 						"5e3948aa72c1a13178a1be93"
@@ -96,12 +96,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/tasks/5e09b40b737514227cde39e2",
-					"protocol": "http",
+					"raw": "{{url}}/tasks/5e09b40b737514227cde39e2",
 					"host": [
-						"localhost"
+						"{{url}}"
 					],
-					"port": "3000",
 					"path": [
 						"tasks",
 						"5e09b40b737514227cde39e2"
@@ -127,12 +125,10 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://localhost:3000/tasks/5d2d9ef11630912830ed1274",
-					"protocol": "http",
+					"raw": "{{url}}/tasks/5d2d9ef11630912830ed1274",
 					"host": [
-						"localhost"
+						"{{url}}"
 					],
-					"port": "3000",
 					"path": [
 						"tasks",
 						"5d2d9ef11630912830ed1274"
